@@ -1,13 +1,13 @@
-<script>
-  import VoiceVisualizer from './VoiceVisualiser.svelte';
+<script lang="ts">
+	function greet() {
+		alert('Welcome to Svelte!');
+	}
 </script>
 
-<VoiceVisualizer />
+<button onclick={greet}>click me</button>
 
 <style>
-  :global(body) {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+	button {
+		font-size: 2em;
+	}
 </style>
